@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Container from '../components/Container'
+import RegisterForm from '../components/Inputs/RegisterForm'
 
 const Register = () => {
+  const [submitting, setSubmitting] = useState(false)
+
+  const onSubmit = () => {}
+
   return (
-    <div>Register Page</div>
+    <Container>
+      <div className='flex items-center h-[79vh] justify-around'>
+        <img 
+          src='./designer.png' 
+          alt='designer showing thumbs up' 
+          className='h-[560px]'
+        />
+        <div>
+          <RegisterForm
+            onSubmit={onSubmit}
+            submitting={submitting}
+          />
+        </div>
+      </div>
+    </Container>
   )
 }
 
