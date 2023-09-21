@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'regal-blue': '#903AFF',
+        'background-color': '#150E28',
+        'text-color': '#D434FE',
+        'light-blue': '#903AFF',
       },
     },
   },
