@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Container from '../components/Container'
-import RegisterForm from '../components/Inputs/RegisterForm'
+import RegisterForm from '../components/Forms/RegisterForm'
 
 const Register = () => {
   const [submitting, setSubmitting] = useState(false)

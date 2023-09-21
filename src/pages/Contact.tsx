@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Container from '../components/Container'
-import ContactForm from '../components/Inputs/ContactForm'
+import ContactForm from '../components/Forms/ContactForm'
 
 const Contact = () => {
   const [submitting, setSubmitting] = useState(false)
