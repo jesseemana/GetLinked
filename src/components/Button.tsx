@@ -1,15 +1,15 @@
 import React from 'react'
 
 interface ButtonProps {
-  onClick: () => void
   label: string
+  onClick: () => void
 }
 
 const Button = ({onClick, label}: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className=''
+      className='bg-gradient-to-r from-pink-500 via-purple-500 via-70% to-indigo-500 px-6 py-2 text-white rounded-sm capitalize'
     >
       {label}
     </button>
