@@ -7,6 +7,7 @@ type InputProps = {
   error?: string
   htmlFor?: string
   placeholder: string
+  inputProps?: unknown
 }
 
 const Input = (props: InputProps) => {
@@ -23,7 +24,8 @@ const Input = (props: InputProps) => {
         type={props.type}
         placeholder={props.placeholder}
         autoComplete='off'
-        className='py-1 md:py-3 px-3 text-sm text-gray-200 border border-gray-700 rounded-md bg-transparent w-[300px] outline-none'
+        {...(props.inputProps ?? {})}
+        className='py-3 px-3 text-sm text-gray-200 border border-gray-700 rounded-md bg-transparent w-[400px] lg:w-[250px] outline-none'
       />
       {props.error && <span className='text-red-600 text-sm'>{props.error}</span>}
     </>
