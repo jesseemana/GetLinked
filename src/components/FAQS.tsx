@@ -1,4 +1,4 @@
-import React from 'react'
+import Questions from './Questions'
 import Container from '../components/Container'
 
 const FAQS = () => {
@@ -25,6 +25,7 @@ const FAQS = () => {
             <p>We got answers to the questions that you might
               want to ask about getlinked Hackathon 1.0
             </p>
+            <Questions />
           </div>
         </div>
       </Container>
