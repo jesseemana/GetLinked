@@ -10,7 +10,7 @@ import useDocumentTitle from '@/hooks/useDocumentTitle'
 
 const Home = () => {
   useDocumentTitle('GetLinked Hackathon - Home')
-  
+
   return (
     <>
       <Hero />
@@ -18,7 +18,7 @@ const Home = () => {
       <Guidelines />
       <Criteria />
       <FAQS />
-      <Partners />
+      {/* <Partners /> */}
       <Footer />
     </>
   )

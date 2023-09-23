@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'hero-image': "url('./man.png')",
+      },
       colors: {
         'background-color': '#150E28',
         'text-color': '#D434FE',
