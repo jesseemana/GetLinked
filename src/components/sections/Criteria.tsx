@@ -9,11 +9,11 @@ const Criteria = () => {
     <div className='border-[0.3px] border-l-0 border-r-0 border-b-0 border-gray-500 p-10'>
       <Container>
         <div className='flex flex-col lg:flex-row items-center justify-around'>
-          <div className='lg:w-1/2 ml-20 relative'>
+          <div className='lg:w-1/2  lg:ml-20 relative'>
             <img 
               src='./criteria.png' 
               alt='criteria.png' 
-              className=''
+              className='h-[200px] md:h-[300px] lg:h-[500px]'
             />
             <img 
               src='./starpu.png' 
@@ -27,7 +27,7 @@ const Criteria = () => {
               alt='decorator icons' 
               className='absolute top-[40px] right-[14%]' 
             />
-            <h1 className='text-white text-3xl lg:text-4xl font-bold'>Judging criteria <br /> 
+            <h1 className='text-white text-2xl md:text-4xl font-bold'>Judging criteria <br /> 
               <span className='text-text-color'>Key attributes</span>
             </h1>
             {points.map((item ,index) => (

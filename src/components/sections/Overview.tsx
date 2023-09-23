@@ -10,14 +10,14 @@ const Overview = () => {
             <img 
               src='./overview.png' 
               alt='overview.png' 
-              className='h-[300px] lg:h-[500px]'
+              className='h-[200px] lg:h-[500px]'
             />
             <img src='./starpu.png' alt='decorator icons' className='absolute top-[40%]' />
-            <img src='./arrow.png' alt='decorator icons' className='absolute right-[40%] lg:right-[30%] top-[90%]' />
+            <img src='./arrow.png' alt='decorator icons' className='absolute right-[40%] lg:right-[30%] top-[90%] h-12' />
           </div>
-          <div className='text-gray-300 lg:w-1/2 p-7 relative text-xl text-center lg:text-start'>
+          <div className='text-gray-300 lg:w-1/2 p-7 relative text-md md:text-xl text-center lg:text-start'>
             <img src='./starpu.png' alt='decorator icons' className='absolute top-[40px] right-[4%]' />
-            <h1 className='text-white text-3xl font-bold mb-2'>Introduction to getlinked <br /> 
+            <h1 className='text-white text-xl md:text-3xl font-bold mb-2'>Introduction to getlinked <br /> 
               <span className='text-text-color'>techHakacthon 1.0</span>
             </h1>
             <p>
