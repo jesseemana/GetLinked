@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import Container from '../components/Container'
 import ContactForm from '../components/Forms/ContactForm'
+import useDocumentTitle from '@/hooks/useDocumentTitle'
 
 const Contact = () => {
+  useDocumentTitle('Contact')
+  
   const [submitting, setSubmitting] = useState(false)
 
   const onSubmit = () => {}
