@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import axios from 'axios'
+import { useState } from 'react'
 import Container from '../components/Container'
-import ContactForm from '../components/Forms/ContactForm'
 import useDocumentTitle from '@/hooks/useDocumentTitle'
+import ContactForm, { ContactFields } from '../components/Forms/ContactForm'
 
 const Contact = () => {
   useDocumentTitle('Contact')
   
   const [submitting, setSubmitting] = useState(false)
 
-  const onSubmit = () => {}
+  const submit = async(data: ContactFields) => {
+    console.log(data)
+  }
 
   return (
     <Container>
-      <div className='text-gray-200 flex items-center h-[84vh] px-2 justify-around'>
-        <div className='flex flex-col gap-4 font-normal px-3'>
+      <div className='text-gray-200 items-center flex flex-col-reverse lg:grid lg:grid-cols-2 px-2 justify-around gap-y-5'>
+        <div className='flex flex-col gap-4 font-normal px-3 w-full'>
           <h1 className='text-text-color text-2xl font-bold'>Get in touch</h1>
           <p className='capitalize'>contact <br/> information</p>
           <p>27, Alara Street <br/>
@@ -34,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
         <ContactForm
-          onSubmit={onSubmit}
+          onSubmit={submit}
           submitting={submitting}
         />
       </div>
