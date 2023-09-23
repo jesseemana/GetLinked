@@ -9,8 +9,26 @@ const Contact = () => {
   
   const [submitting, setSubmitting] = useState(false)
 
-  const submit = async(data: ContactFields) => {
-    console.log(data)
+  const submit = async (data: ContactFields) => {
+    setSubmitting(true)
+    try {
+      const response = await axios.post('https://backend.getlinked.ai/hackathon/contact-form', 
+      JSON.stringify({
+        "email": data.email ,
+        "phone_number": data.phone,
+        "first_name": data.full_name,
+        "message": data.message,
+      }), 
+      {
+        headers: {'Content-Type': 'application/json'},
+        withCredentials: true
+      })
+      console.log(response)
+    } catch (error) {
+      console.error(error)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (

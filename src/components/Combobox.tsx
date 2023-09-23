@@ -6,26 +6,22 @@ import { Button } from "@/components/ui/button"
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from "@/components/ui/command"
 import { Popover, PopoverContent, PopoverTrigger, } from "@/components/ui/popover"
 
-const frameworks = [
+const categories = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "Category 1",
+    label: "Category 1",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "Category 2",
+    label: "Category 2",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
+    value: "Category 3",
+    label: "Category 3",
   },
   {
-    value: "remix",
-    label: "Remix",
-  },
-  {
-    value: "astro",
-    label: "Astro",
+    value: "Category 4",
+    label: "Category 4",
   },
 ]
 
@@ -43,19 +39,19 @@ export function Combobox() {
           className="w-[250px] justify-between bg-transparent border-gray-700 text-gray-400"
         >
           {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
+            ? categories.find((category) => category.value === value)?.label
+            : "Select category..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[250px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." />
-          <CommandEmpty>No framework found.</CommandEmpty>
+          <CommandInput placeholder="Search category..." />
+          <CommandEmpty>No Category found.</CommandEmpty>
           <CommandGroup>
-            {frameworks.map((framework) => (
+            {categories.map((category) => (
               <CommandItem
-                key={framework.value}
+                key={category.value}
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue)
                   setOpen(false)
@@ -64,10 +60,10 @@ export function Combobox() {
                 <Check
                   className={cn(
                     "mr-2 h-4 w-4",
-                    value === framework.value ? "opacity-100" : "opacity-0"
+                    value === category.value ? "opacity-100" : "opacity-0"
                   )}
                 />
-                {framework.label}
+                {category.label}
               </CommandItem>
             ))}
           </CommandGroup>

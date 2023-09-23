@@ -37,6 +37,13 @@ const ContactForm = ({onSubmit, submitting}: FormProps) => {
         error={errors.full_name?.message as string}
       />
       <Input 
+        id='phone' 
+        type='text' 
+        inputProps={register('phone')}
+        placeholder='Phone number' 
+        error={errors.phone?.message as string}
+      />
+      <Input 
         id='email' 
         type='text' 
         inputProps={register('email')}
