@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         'background-color': '#150E28',
         'text-color': '#D434FE',
-        'light-blue': '#903AFF',
+        'span-color': '#FF26B9',
+        'footer': '#100B20',
       },
       keyframes: {
         "accordion-down": {
