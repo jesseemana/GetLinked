@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from './Container'
+import Container from '@/components/Container'
 
 const Partners = () => {
   return (
@@ -13,17 +13,13 @@ const Partners = () => {
             </p>
           </div>
           <div className='grid place-items-center'>
-            <div className='border border-text-color rounded-md w-[800px] h-[400px] flex flex-col gap-4 items-center justify-center'>
-              <div className='flex gap-20 items-center'>
-                <img src='./LibertyLogo.png' alt='company logo' className='h-20 border-2 border-text-color'/>
-                <img src='./Libertywhite.png' alt='company logo' className='h-10'/>
-                <img src='./WinwiseLogo.png' alt='company logo' className='h-20'/>
-              </div>
-              <div className='flex gap-20 items-center'>
-                <img src='./wisperlogo.png' alt='company logo' className='h-20'/>
-                <img src='./Paybox.png' alt='company logo' className='h-10'/>
-                <img src='./Vizual Plus.png' alt='company logo' className='h-10 w-[200px]'/>
-              </div>
+            <div className='place-items-center grid md:grid-cols-3 gap-8 grid-cols-2 grid-rows-3 md:grid-rows-none'>
+              <img src='./LibertyLogo.png' alt='company logo' className='h-10 md:h-20'/>
+              <img src='./Libertywhite.png' alt='company logo' className='md:h-10 h-6'/>
+              <img src='./WinwiseLogo.png' alt='company logo' className='h-10 md:h-20'/>
+              <img src='./wisperlogo.png' alt='company logo' className='h-10 md:h-20'/>
+              <img src='./Paybox.png' alt='company logo' className='md:h-10 h-6'/>
+              <img src='./Vizual Plus.png' alt='company logo' className='md:h-10 h-6'/>
             </div>
           </div>
         </div>

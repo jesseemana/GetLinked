@@ -21,7 +21,7 @@ const Criteria = () => {
               className='absolute top-[170px]' 
             />
           </div>
-          <div className='text-gray-200 lg:w-1/2 p-7 relative flex flex-col gap-4 text-lg md:text-3xl text-center lg:text-start'>
+          <div className='text-gray-200 lg:w-1/2 p-7 relative flex flex-col gap-4 text-center lg:text-start'>
             <img 
               src='./star.png' 
               alt='decorator icons' 
