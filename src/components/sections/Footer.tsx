@@ -1,13 +1,13 @@
 import React from 'react'
-import Container from './Container'
+import Container from '@/components/Container'
 
 const Footer = () => {
   return (
-    <footer className='bg-footer-background p-10'>
+    <footer className='bg-footer p-7'>
       <Container>
-        <div className='flex flex-col lg:flex-row justify-evenly mr-10'>
+        <div className='grid md:grid-cols-3 grid-rows-3 md:grid-rows-none justify-between md:gap-10 place-content-center'>
           {/* GET LINKED */}
-          <div className='text-gray-300 flex flex-col gap-2 w-1/3'>
+          <div className='text-gray-300 flex flex-col gap-2 '>
             <h1 className='font-bold text-white text-3xl'>
               get<span className='text-text-color'>linked</span>
             </h1>
@@ -16,12 +16,12 @@ const Footer = () => {
               established by a group of organizations with the aim of showcasing 
               young and talented individuals in the field of technology.
             </p>
-            <p className='mt-5'>Terms of Use <span className='border border-text-color mr-2'></span> Privacy Policy</p>
+            <p className='mt-5'>Terms of Use <span className='border border-text-color mr-2 ml-2 h-2'></span> Privacy Policy</p>
           </div>
           {/* END GET LINKED */}
 
           {/* USEFUL LINKS */}
-          <div>
+          <div className='mt-7 md:mt-0'>
             <h1 className='text-text-color capitalize'>useful links</h1>
             <ul className='text-gray-300 flex flex-col gap-2'>
               <li>Overview</li>
@@ -42,7 +42,7 @@ const Footer = () => {
           {/* END USEFUL LINKS */}
 
           {/* CONTACT US */}
-          <div className='text-gray-200 flex flex-col gap-2'>
+          <div className='text-gray-200 flex flex-col gap-2 mt-10 md:mt-0'>
             <h1 className='text-text-color capitalize'>contact us</h1>
             <div className='flex gap-2 items-center'>
               <img src='./contact1.png' alt='contact icon' className='h-4' />
