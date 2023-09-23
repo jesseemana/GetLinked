@@ -1,8 +1,6 @@
-import React from 'react'
-
-const Points = ({span, text}: { text: string, span: string }) => {
+const Points = ({point, text}: { text: string, point: string }) => {
   return (
-    <p> <span className='text-text-color text-lg'>{span}: </span> {text}</p>
+    <p className="text-sm md:text-md"> <span className='text-span-color'>{point}: </span> {text}</p>
   )
 }
 
